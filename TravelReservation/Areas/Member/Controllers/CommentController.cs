@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace TravelReservation.Controllers
+namespace TravelReservation.Areas.Member.Controllers
 {
-    public class DefaultController : Controller
+    [Area("Member")]
+    [AllowAnonymous]
+    public class CommentController : Controller
     {
         public IActionResult Index()
         {
