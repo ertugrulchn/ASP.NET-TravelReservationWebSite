@@ -10,5 +10,6 @@
         public string mail { get; set; }
         public string gender { get; set; }
         public string imagerurl { get; set; }
+        public IFormFile Image { get; set; }
     }
 }
